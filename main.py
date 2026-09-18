@@ -56,6 +56,10 @@ def nom_nemeh():
 
     songolt = input("Төрлийн дугаар: ").strip()
 
+    if songolt not in ["1", "2", "3", "4", "5"]:
+        print("Буруу сонголт.")
+        return
+
     turul = turluud[int(songolt) - 1]
     ner = input("Номын нэр: ").strip()
     une = input("Номын үнэ: ").strip()
